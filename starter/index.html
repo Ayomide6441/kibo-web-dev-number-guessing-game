@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-panel">
+      <!-- top -->
+      <div class="top text-center">
+        <p class="sub-heading">Choose betweeen 1 - 20</p>
+      </div>
+      <!-- secret-box -->
+      <div class="secret-box text-center">
+        <h1 class="heading-primary">Guess The Number</h1>
+        <div class="number">?</div>
+      </div>
+      <!-- game -->
+      <div class="game text-center">
+        <div class="left">
+          <input type="tel" class="guess" />
+          <button class="btn confirm">Confirm</button>
+        </div>
+        <div class="right">
+          <p class="message">Start guessing...</p>
+          <p class="label-score">Score: <span class="score">20</span></p>
+          <p class="label-highscore">
+            Highscore: <span class="highscore">0</span>
+          </p>
+        </div>
+      </div>
+      <!-- restart -->
+      <div class="restart-box text-center">
+        <button class="btn new-game">New Game</button>
+      </div>
+    </div>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="script.js"></script>
+  </body>
+</html>
